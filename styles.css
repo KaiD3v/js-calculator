@@ -1,0 +1,55 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  background-color: rgb(46, 38, 38);
+  place-items: center;
+}
+
+.calculator-div {
+  display: grid;
+  margin: 0;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: auto repeat(5, 70px);
+  gap: 5px;
+  padding: 20px;
+  border: 1px solid #161515;
+  background-color: #161515;
+  border: solid 1px;
+  justify-items: center;
+  align-items: center;
+}
+
+.calculator-div button {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(49, 165, 165);
+  border: solid 1px;
+  transition: background-color 0.3s ease-in;
+}
+
+.calculator-div button:hover {
+  background-color: rgb(33, 85, 85);
+  cursor: pointer;
+}
+
+.response {
+  display: flex;
+  grid-column: span 4;
+  padding-top: 3rem;
+  font-size: 1.5em;
+  text-align: left;
+  justify-content: right;
+  background-color: rgb(28, 114, 114);
+  width: 100%;
+  height: 50px;
+  border: solid 1px;
+}
+
+.equal-btn {
+  grid-column: span;
+}
+
+.delete-btn {
+  grid-column: span 3;
+}
